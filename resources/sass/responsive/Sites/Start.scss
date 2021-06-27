@@ -1,0 +1,83 @@
+$startColor: #fff;
+$startSec: rgba(0, 0, 0, 0.11);
+.wrapper-start {
+  font-family: $font-sub;
+  max-width: 900px;
+  height: 80vh;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center ;
+  display: grid;
+  justify-content: center; align-content: center;
+  background: url("/images/start_bg.png") #000000 center center no-repeat ;
+  background-size: contain;
+
+  & .intro{
+    color: white;
+    display: block;
+    justify-self: center;
+    align-self: center;
+  }
+  & span{
+    font-size: 28px;
+    color: #e3342f;
+
+  }
+}
+
+.glitch {
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 80px;
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  transform: scale3d(1,1,1);
+
+
+
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: $startSec;
+    color: $startColor;
+    clip: rect(0, 900px, 0, 0);
+
+  }
+
+  &::before {
+    left: 7px;
+    text-shadow: 1px 0 green;
+    animation: glitch-effect 3s infinite linear alternate-reverse;
+  }
+
+  &::after {
+    left: 3px;
+    text-shadow: -1px 0 red;
+    animation: glitch-effect 2s infinite linear alternate-reverse;
+  }
+
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+@keyframes glitch-effect{
+  $steps: 20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}

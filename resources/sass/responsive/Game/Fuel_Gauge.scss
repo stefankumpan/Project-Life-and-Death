@@ -1,0 +1,48 @@
+//Gauge
+.fuel {
+  position: relative;
+  width: 150px;
+}
+.fuel-counter{
+  display: flex;
+  justify-content: space-between;
+  background: #050505;
+  //font-size: 12px;
+}
+.sil-text{
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 3px;
+
+}
+.fuel-scala{
+  width: 150px;
+}
+.fuel-needle {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  transition: 5s;
+  animation-name: needle;
+  animation-duration: 3s;
+  transform-origin: center 63px;
+  height: 70px;
+}
+
+@media (min-width: 992px) {
+  .fuel {
+    width: 300px;
+  }
+  .fuel-counter{
+    //font-size: 18px;
+  }
+  .fuel-scala{
+    width: 300px;
+  }
+  .fuel-needle {
+    transform-origin: center 125.25px;
+    height: 140px;
+  }
+}

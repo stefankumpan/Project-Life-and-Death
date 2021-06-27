@@ -1,0 +1,117 @@
+.leaderboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url("/images/leaderboard_bg.png") #000000 center center no-repeat ;
+  min-height: 600px;
+  padding-bottom: 70px;
+  h2 {
+    text-align: center;
+  }
+}
+
+.lb-table {
+  width: 960px;
+  margin: 0 auto;
+  table-layout: auto;
+  border: 1px solid $white;
+  padding: 0;
+  border-spacing: 0;
+
+  th {
+    font-family: $font-sub;
+    text-transform: uppercase;
+    color: $red;
+    border-bottom: 2px solid $white;
+    font-size: 18px;
+    padding: 5px 0;
+    background-color: $gray;
+  }
+
+  td {
+    padding: 6px 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid $white;
+  }
+}
+
+.lb-paginate {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 0;
+
+  button {
+    cursor: pointer;
+    display: inline;
+    position: relative;
+    padding: 5px 10px;
+    margin: 3px;
+    border: 1px solid $white;
+    font-weight: bolder;
+    color: $white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  & :hover {
+    background-color: $white;
+    color: $black;
+  }
+
+  & :disabled {
+    background-color: rgba(158, 158, 158, 0.1);
+    color: rgba(158, 158, 158, 0.1);
+  }
+}
+
+.leaderboard-player-box {
+  display: grid;
+  grid-template-columns: 100px 450px;
+  grid-gap: 10px;
+  justify-self: center;
+  width: 575px;
+  margin: 0 auto 4px;
+  border: 1px solid $white;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.91);
+  .img {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    img {
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 0 auto;
+      padding: 15px;
+    }
+  }
+
+  .stats {
+    .top-box {
+      padding: 3px 3px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid $white ;
+      .rang {
+        text-align: right;
+      }
+      .name{
+        font-weight: 700;
+      }
+    }
+    .bottom-box{
+      margin-top: 5px;
+      display: grid;
+      grid-template-columns:  1fr  1fr;
+      padding: 3px;
+      span{
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
