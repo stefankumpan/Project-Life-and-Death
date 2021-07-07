@@ -1,6 +1,14 @@
 # Project-LaDwC
+![cover](public\images\projectimg\cover.jpg)
+### Home
+![home](public\images\projectimg\home.jpg)
+### Game
+![ingame](public\images\projectimg\ingame.jpg)
+![options](public\images\projectimg\options.jpg)
+### Leaderbord
+![leaderboard](public\images\projectimg\leaderboard.jpg)
 
-###Install
+### Install
 
 1| Copy .env
     
