@@ -1,4 +1,9 @@
-# Project-LaDwC
+# Project-Life and death
+Demo Videos 
+- [Website](https://www.youtube.com/watch?v=WewHQCAEz1s&list=PLY6Og4oKy_DeqpGm1sZ_c1Dq_iQpcbOP3&index=1) 
+- [Windows Desktop App](https://www.youtube.com/watch?v=yK_vE1D4nzM&list=PLY6Og4oKy_DeqpGm1sZ_c1Dq_iQpcbOP3&index=2) 
+- [Mac Desktop App](https://www.youtube.com/watch?v=1jY8KEJegw0&list=PLY6Og4oKy_DeqpGm1sZ_c1Dq_iQpcbOP3&index=3) 
+
 ![cover](public/images/projectimg/cover.jpg)
 ### Home
 ![home](public/images/projectimg/home.jpg)
@@ -7,6 +12,8 @@
 ![options](public/images/projectimg/options.jpg)
 ### Leaderbord
 ![leaderboard](public/images/projectimg/leaderboard.jpg)
+
+
 
 ### Install
 
